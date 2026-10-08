@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>حاسبة النسبة الموزونة للجامعات السعودية 2026 | الثانوية والقدرات والتحصيلي</title>
+<meta name="description" content="حاسبة النسبة الموزونة للجامعات السعودية 2026: احسب نسبتك فورًا من الثانوية والقدرات والتحصيلي، واختر أوزان جامعة الملك فهد للبترول والمعادن أو جامعة الملك سعود أو الملك عبدالعزيز أو الأميرة نورة، واعرف الدرجة المطلوبة للوصول إلى هدفك.">
+<meta name="keywords" content="حاسبة النسبة الموزونة, النسبة الموزونة 2026, حساب النسبة الموزونة, القدرات, التحصيلي, الجامعات السعودية, جامعة الملك فهد للبترول والمعادن">
+<meta name="theme-color" content="#4f46e5">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"حاسبة النسبة الموزونة للجامعات السعودية 2026","inLanguage":"ar","applicationCategory":"EducationalApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"SAR"}}
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f6f7fb;--card:#fff;--text:#0f172a;--line:#e2e8f0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+  .grad{background:linear-gradient(135deg,#2563eb 0%,#7c3aed 100%)}
+  .grad-text{background:linear-gradient(135deg,#2563eb,#7c3aed);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:1.5rem;box-shadow:0 10px 40px -12px rgba(79,70,229,.15)}
+  .field{width:100%;border:1.5px solid var(--line);border-radius:1rem;padding:.8rem 1rem;font-size:1.05rem;font-weight:700;background:#fff;transition:all .25s;outline:none;text-align:center;font-family:inherit}
+  .field:focus{border-color:#7c3aed;box-shadow:0 0 0 4px rgba(124,58,237,.15)}
+  .field.left{text-align:right;font-weight:600;font-size:1rem}
+  .field:disabled{background:#f1f5f9;color:#94a3b8}
+  textarea.field{resize:vertical;min-height:130px}
+  .preset{border:1.5px solid var(--line);border-radius:1rem;padding:.75rem .5rem;font-weight:700;font-size:.88rem;background:#fff;transition:all .25s;cursor:pointer;font-family:inherit;line-height:1.5}
+  .preset:hover{transform:translateY(-2px);border-color:#7c3aed}
+  .preset.active{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;border-color:transparent;box-shadow:0 8px 20px -6px rgba(124,58,237,.5)}
+  .btn{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;font-weight:800;border-radius:1rem;transition:all .25s;box-shadow:0 12px 28px -8px rgba(79,70,229,.55);font-family:inherit;cursor:pointer}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 16px 32px -8px rgba(79,70,229,.65)}
+  .btn:active{transform:scale(.98)}
+  .fade{animation:fade .45s ease both}
+  @keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+  .bar{transition:width .7s cubic-bezier(.2,.8,.2,1)}
+  .ring{transition:stroke-dashoffset .8s cubic-bezier(.2,.8,.2,1)}
+  input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+  input[type=number]{-moz-appearance:textfield}
+  .seo h2{font-weight:800;font-size:1.3rem;margin:1.6rem 0 .6rem}
+  .seo h3{font-weight:800;font-size:1.05rem;margin:1.2rem 0 .4rem}
+  .seo p,.seo li{color:#334155;line-height:2;font-size:1rem}
+  .seo ul{list-style:disc;padding-right:1.4rem}
+  .seo table{width:100%;border-collapse:collapse;font-size:.95rem;margin:.8rem 0}
+  .seo th,.seo td{border:1px solid var(--line);padding:.6rem;text-align:center}
+  .seo th{background:#eef2ff;font-weight:800}
+  .overlay{position:fixed;inset:0;background:rgba(15,23,42,.55);backdrop-filter:blur(6px);z-index:50;display:none;align-items:flex-end;justify-content:center;padding:0}
+  .overlay.open{display:flex}
+  .sheet{background:#fff;width:100%;max-width:760px;max-height:92vh;overflow-y:auto;border-radius:1.75rem 1.75rem 0 0;animation:sheet .35s cubic-bezier(.2,.8,.2,1) both}
+  @keyframes sheet{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
+  @media(min-width:640px){.overlay{align-items:center;padding:1.5rem}.sheet{border-radius:1.75rem}}
+  .tab{padding:.6rem 1.1rem;border-radius:.85rem;font-weight:700;font-size:.9rem;color:#475569;transition:all .2s;cursor:pointer;font-family:inherit;white-space:nowrap}
+  .tab.on{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff}
+  .pane{display:none}.pane.on{display:block;animation:fade .35s ease both}
+  .pane p,.pane li{color:#334155;line-height:2}
+  .pane h3{font-weight:800;margin:1.2rem 0 .3rem;font-size:1.1rem}
+  .pane ul{list-style:disc;padding-right:1.4rem}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-white/85 backdrop-blur sticky top-0 z-40 border-b border-slate-200">
+  <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+    <a href="#calculator" class="flex items-center gap-2 font-extrabold text-lg">
+      <span class="grad w-9 h-9 rounded-xl flex items-center justify-center text-white"><i class="fa-solid fa-graduation-cap"></i></span>
+      <span class="grad-text">النسبة الموزونة</span>
+    </a>
+    <nav class="flex items-center gap-1 sm:gap-4 text-xs sm:text-sm font-bold text-slate-600">
+      <a href="#calculator" class="hidden md:inline hover:text-violet-600 transition">الحاسبة</a>
+      <a href="#guide" class="hidden md:inline hover:text-violet-600 transition">دليل الحساب</a>
+      <button type="button" data-open="about" class="px-2 py-1 hover:text-violet-600 transition">من نحن</button>
+      <button type="button" data-open="privacy" class="px-2 py-1 hover:text-violet-600 transition">سياسة الخصوصية</button>
+      <button type="button" data-open="contact" class="px-3 py-1.5 rounded-lg grad text-white">اتصل بنا</button>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 grad opacity-[.07]"></div>
+  <div class="max-w-5xl mx-auto px-4 pt-12 pb-8 text-center relative">
+    <span class="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-4 py-1.5 text-sm font-bold text-violet-700 mb-5">
+      <i class="fa-solid fa-bolt"></i> نتيجة فورية ومجانية أثناء الكتابة
+    </span>
+    <h1 class="text-3xl sm:text-5xl font-black leading-snug">
+      <span class="grad-text">حاسبة النسبة الموزونة</span> للجامعات السعودية 2026
+    </h1>
+    <p class="mt-4 text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-loose">
+      أدخل درجات الثانوية والقدرات والتحصيلي، واختر أوزان جامعتك، وتابع نسبتك الموزونة لحظة بلحظة مع تقييم ذكي ومعرفة الدرجة المطلوبة لتحقيق هدفك.
+    </p>
+  </div>
+</section>
+
+<!-- Calculator -->
+<main id="calculator" class="max-w-5xl mx-auto px-4 pb-10">
+  <div class="grid lg:grid-cols-5 gap-6">
+
+    <!-- Inputs -->
+    <div class="lg:col-span-3 card p-5 sm:p-8">
+      <h2 class="font-extrabold text-xl mb-4"><i class="fa-solid fa-building-columns text-violet-600 ml-2"></i>اختر الجامعة (الأوزان)</h2>
+      <div id="presets" class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-3"></div>
+      <p class="text-xs text-slate-500 mb-6 leading-relaxed"><i class="fa-solid fa-circle-info ml-1"></i>الأوزان المعروضة استرشادية وقد تتغير من عام لآخر وبحسب الكلية والتخصص. تأكد دائمًا من بوابة القبول الرسمية للجامعة، ويمكنك تعديل الأوزان يدويًا في أي وقت.</p>
+
+      <h2 class="font-extrabold text-xl mb-4"><i class="fa-solid fa-pen-to-square text-violet-600 ml-2"></i>أدخل درجاتك</h2>
+      <div class="grid sm:grid-cols-3 gap-4">
+        <div>
+          <label class="block text-sm font-bold mb-2" for="gpa">الثانوية العامة (من 100) <span id="gTag" class="text-xs text-slate-400"></span></label>
+          <input id="gpa" type="number" inputmode="decimal" min="0" max="100" step="0.01" placeholder="مثال: 95" class="field">
+        </div>
+        <div>
+          <label class="block text-sm font-bold mb-2" for="qudrat">القدرات العامة (من 100) <span id="qTag" class="text-xs text-slate-400"></span></label>
+          <input id="qudrat" type="number" inputmode="decimal" min="0" max="100" step="0.01" placeholder="مثال: 85" class="field">
+        </div>
+        <div>
+          <label class="block text-sm font-bold mb-2" for="tahsili">التحصيلي (من 100) <span id="tTag" class="text-xs text-slate-400"></span></label>
+          <input id="tahsili" type="number" inputmode="decimal" min="0" max="100" step="0.01" placeholder="مثال: 90" class="field">
+        </div>
+      </div>
+
+      <!-- Custom weights -->
+      <div class="mt-6 border-t border-slate-200 pt-5">
+        <button id="toggleCustom" type="button" class="flex items-center justify-between w-full font-bold text-slate-700">
+          <span><i class="fa-solid fa-sliders text-violet-600 ml-2"></i>تخصيص الأوزان يدويًا</span>
+          <i id="chev" class="fa-solid fa-chevron-down transition-transform"></i>
+        </button>
+        <div id="customBox" class="hidden mt-4 fade">
+          <div class="grid grid-cols-3 gap-3">
+            <div><label class="block text-xs font-bold mb-1" for="wg">وزن الثانوية %</label><input id="wg" type="number" min="0" max="100" step="0.5" value="30" class="field"></div>
+            <div><label class="block text-xs font-bold mb-1" for="wq">وزن القدرات %</label><input id="wq" type="number" min="0" max="100" step="0.5" value="30" class="field"></div>
+            <div><label class="block text-xs font-bold mb-1" for="wt">وزن التحصيلي %</label><input id="wt" type="number" min="0" max="100" step="0.5" value="40" class="field"></div>
+          </div>
+        </div>
+        <p id="sumInfo" class="text-sm font-bold mt-3"></p>
+      </div>
+
+      <p id="error" class="hidden mt-4 bg-red-50 text-red-700 border border-red-200 rounded-xl px-4 py-3 text-sm font-semibold" role="alert"></p>
+
+      <div class="grid sm:grid-cols-3 gap-3 mt-6">
+        <button id="calcBtn" type="button" class="btn sm:col-span-2 py-4 text-lg"><i class="fa-solid fa-calculator ml-2"></i>احسب نسبتي</button>
+        <button id="resetBtn" type="button" class="py-4 rounded-2xl border-2 border-slate-200 font-bold text-slate-600 hover:bg-slate-100 transition"><i class="fa-solid fa-rotate-right ml-2"></i>مسح</button>
+      </div>
+    </div>
+
+    <!-- Results -->
+    <div class="lg:col-span-2 space-y-6">
+      <div class="card p-6 text-center" id="resultCard">
+        <h2 class="font-extrabold text-lg mb-4 text-slate-700">نسبتك الموزونة</h2>
+        <div id="resultEmpty" class="py-8 text-slate-400">
+          <i class="fa-solid fa-chart-simple text-5xl mb-3"></i>
+          <p class="font-semibold">أدخل درجاتك وستظهر النتيجة هنا فورًا</p>
+        </div>
+        <div id="resultBox" class="hidden">
+          <div class="grad rounded-3xl py-6 text-white shadow-lg">
+            <div class="relative w-40 h-40 mx-auto">
+              <svg viewBox="0 0 120 120" class="w-full h-full -rotate-90">
+                <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="9"/>
+                <circle id="ring" class="ring" cx="60" cy="60" r="52" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="326.7"/>
+              </svg>
+              <div class="absolute inset-0 flex flex-col items-center justify-center">
+                <div class="text-5xl font-black leading-none"><span id="finalScore">0</span><span class="text-2xl">%</span></div>
+                <div class="text-xs opacity-90 font-semibold mt-1">النسبة الموزونة</div>
+              </div>
+            </div>
+            <div id="grade" class="inline-block bg-white/20 rounded-full px-4 py-1.5 text-sm font-bold mt-4"></div>
+            <p id="gradeNote" class="text-xs opacity-90 mt-2 px-4 leading-relaxed"></p>
+          </div>
+          <div class="mt-5 space-y-4 text-right" id="breakdown"></div>
+        </div>
+      </div>
+
+      <!-- Target -->
+      <div class="card p-6">
+        <h2 class="font-extrabold text-lg mb-1"><i class="fa-solid fa-bullseye text-violet-600 ml-2"></i>كم أحتاج للوصول إلى هدفي؟</h2>
+        <p class="text-sm text-slate-500 mb-4">حدد نسبتك المستهدفة وسنحسب الدرجة المطلوبة لحظيًا.</p>
+        <label class="block text-sm font-bold mb-2" for="target">النسبة المستهدفة %</label>
+        <input id="target" type="number" inputmode="decimal" min="0" max="100" step="0.01" placeholder="مثال: 92" class="field mb-3">
+        <label class="block text-sm font-bold mb-2" for="goalOn">الدرجة التي أريد تحسينها</label>
+        <select id="goalOn" class="field mb-4">
+          <option value="tahsili">التحصيلي</option>
+          <option value="qudrat">القدرات</option>
+          <option value="gpa">الثانوية العامة</option>
+          <option value="all">رفع الدرجات الثلاث بالتساوي</option>
+        </select>
+        <button id="targetBtn" type="button" class="btn w-full py-3"><i class="fa-solid fa-wand-magic-sparkles ml-2"></i>احسب المطلوب</button>
+        <div id="targetResult" class="hidden mt-4 rounded-2xl p-4 text-sm font-bold leading-loose fade" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-8 text-center text-xs text-slate-400 border border-dashed border-slate-300 rounded-2xl py-6">مساحة إعلانية</div>
+</main>
+
+<!-- SEO Content -->
+<section id="guide" class="max-w-4xl mx-auto px-4 pb-10">
+  <article class="card p-6 sm:p-10 seo">
+    <h2 class="!mt-0 text-2xl grad-text">كيف تُحسب النسبة الموزونة للجامعات السعودية 2026؟</h2>
+    <p>النسبة الموزونة هي المعيار الرئيسي الذي تعتمد عليه معظم الجامعات السعودية في المفاضلة بين المتقدمين، وتجمع بين ثلاث درجات: نسبة الثانوية العامة، ودرجة اختبار القدرات العامة، ودرجة الاختبار التحصيلي. وتُعطى كل درجة وزنًا مئويًا تحدده الجامعة، ويكون مجموع الأوزان دائمًا 100%.</p>
+
+    <h2>المعادلة العامة لحساب النسبة الموزونة</h2>
+    <p><strong>النسبة الموزونة = (الثانوية × وزنها) + (القدرات × وزنها) + (التحصيلي × وزنه)</strong></p>
+    <p>فمثلًا إذا كانت الأوزان 30% للثانوية و30% للقدرات و40% للتحصيلي، فتُضرب كل درجة في وزنها وتُجمع النواتج الثلاثة للحصول على النسبة النهائية.</p>
+
+    <h2>مثال تطبيقي</h2>
+    <p>طالب حصل على 95 في الثانوية، و85 في القدرات، و90 في التحصيلي، وأوزان جامعته 30/30/40. نسبته الموزونة = (95 × 0.30) + (85 × 0.30) + (90 × 0.40) = 28.5 + 25.5 + 36 = <strong>90%</strong>.</p>
+
+    <h2>الأوزان المستخدمة في الحاسبة</h2>
+    <table>
+      <thead><tr><th>الجامعة</th><th>الثانوية</th><th>القدرات</th><th>التحصيلي</th></tr></thead>
+      <tbody>
+        <tr><td>جامعة الملك فهد للبترول والمعادن</td><td>0%</td><td>50%</td><td>50%</td></tr>
+        <tr><td>جامعة الملك سعود</td><td>30%</td><td>30%</td><td>40%</td></tr>
+        <tr><td>جامعة الملك عبدالعزيز</td><td>30%</td><td>30%</td><td>40%</td></tr>
+        <tr><td>جامعة الأميرة نورة بنت عبدالرحمن</td><td>30%</td><td>30%</td><td>40%</td></tr>
+      </tbody>
+    </table>
+    <p class="text-sm">تنبيه: هذه الأوزان استرشادية، وتختلف أحيانًا بحسب الكلية والتخصص وسنة القبول. المرجع النهائي دائمًا هو بوابة القبول الرسمية لكل جامعة.</p>
+
+    <h2>الفرق بين النسبة الموزونة والنسبة المكافئة</h2>
+    <p>تعتمد الموزونة على الدرجات الثلاث، أما النسبة المكافئة فتُستخدم في بعض المسارات وتجمع عادةً بين الثانوية والقدرات فقط. لذلك تأكد من النوع الذي تطلبه الكلية التي تستهدفها.</p>
+
+    <h2>نصائح لرفع نسبتك الموزونة</h2>
+    <ul>
+      <li>ركّز على الاختبار صاحب الوزن الأكبر في الجامعة التي تستهدفها، فكل درجة فيه تؤثر أكثر.</li>
+      <li>أعد اختباري القدرات والتحصيلي إن أمكن، فتحسين الدرجة فيهما أسهل من تغيير نسبة الثانوية بعد التخرج.</li>
+      <li>استخدم ميزة «كم أحتاج للوصول إلى هدفي؟» لتعرف الدرجة المطلوبة بدقة قبل موعد الاختبار.</li>
+      <li>قارن بين أكثر من جامعة بتبديل الأوزان، فقد تكون نسبتك أعلى في جامعة تمنح وزنًا أكبر للاختبار الذي تتفوق فيه.</li>
+      <li>راجع النسب المعلنة للتخصص في الأعوام السابقة لتقدير فرصك بواقعية.</li>
+    </ul>
+  </article>
+
+  <article id="faq" class="card p-6 sm:p-10 seo mt-6">
+    <h2 class="!mt-0 text-2xl grad-text">أسئلة شائعة</h2>
+    <h3>هل نتيجة الحاسبة رسمية؟</h3>
+    <p>لا، الحاسبة أداة استرشادية، والنسبة المعتمدة هي التي تعلنها الجامعة أو الجهة الرسمية عند التقديم.</p>
+    <h3>هل تتغير الأوزان من سنة لأخرى؟</h3>
+    <p>نعم، قد تعدّل الجامعات أوزانها بحسب سياسات القبول والتخصص، لذلك أتحنا لك تخصيص الأوزان يدويًا.</p>
+    <h3>هل تُحفظ بياناتي؟</h3>
+    <p>لا، تتم جميع الحسابات داخل متصفحك مباشرة ولا تُرسل درجاتك إلى أي خادم.</p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-900 text-slate-300 mt-6">
+  <div class="max-w-5xl mx-auto px-4 py-10 text-center">
+    <div class="flex items-center justify-center gap-2 font-extrabold text-white text-lg mb-4">
+      <span class="grad w-9 h-9 rounded-xl flex items-center justify-center"><i class="fa-solid fa-graduation-cap"></i></span>
+      حاسبة النسبة الموزونة
+    </div>
+    <nav class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm font-semibold mb-5">
+      <button type="button" data-open="about" class="hover:text-white transition">من نحن</button>
+      <button type="button" data-open="privacy" class="hover:text-white transition">سياسة الخصوصية</button>
+      <button type="button" data-open="terms" class="hover:text-white transition">شروط الاستخدام</button>
+      <button type="button" data-open="contact" class="hover:text-white transition">اتصل بنا</button>
+    </nav>
+    <p class="text-xs text-slate-400 leading-loose max-w-2xl mx-auto">هذه الأداة استرشادية ولا تمثل أي جهة حكومية أو جامعية. النتائج النهائية تُعتمد من الجهات الرسمية.</p>
+    <p class="text-xs text-slate-500 mt-3">© <span id="year"></span> حاسبة النسبة الموزونة. جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+<!-- Info panel (About / Privacy / Terms / Contact) -->
+<div id="overlay" class="overlay" role="dialog" aria-modal="true" aria-labelledby="panelTitle">
+  <div class="sheet p-5 sm:p-8">
+    <div class="flex items-center justify-between mb-4">
+      <h2 id="panelTitle" class="font-black text-xl grad-text">معلومات الموقع</h2>
+      <button id="closeBtn" type="button" aria-label="إغلاق" class="w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 transition"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="flex gap-2 overflow-x-auto pb-3 mb-3 border-b border-slate-200" id="tabs">
+      <button type="button" class="tab" data-tab="about">من نحن</button>
+      <button type="button" class="tab" data-tab="privacy">سياسة الخصوصية</button>
+      <button type="button" class="tab" data-tab="terms">شروط الاستخدام</button>
+      <button type="button" class="tab" data-tab="contact">اتصل بنا</button>
+    </div>
+
+    <!-- About -->
+    <div class="pane" id="pane-about">
+      <h3 class="!mt-0">من نحن</h3>
+      <p>«حاسبة النسبة الموزونة» منصة تعليمية مجانية تساعد طلاب الثانوية العامة وخريجيها في المملكة العربية السعودية على حساب نسبتهم الموزونة بسرعة ودقة، وفهم كيفية احتسابها في الجامعات المختلفة.</p>
+      <h3>رسالتنا</h3>
+      <p>نسعى إلى تبسيط خطوات التخطيط للقبول الجامعي، وتمكين الطالب من اتخاذ قراره بثقة عبر أدوات واضحة وسهلة الاستخدام.</p>
+      <h3>ماذا نقدم؟</h3>
+      <ul>
+        <li>حساب فوري للنسبة الموزونة من الثانوية والقدرات والتحصيلي.</li>
+        <li>أوزان جاهزة لعدد من الجامعات السعودية مع إمكانية التخصيص الكامل.</li>
+        <li>أداة ذكية تحدد الدرجة المطلوبة للوصول إلى نسبتك المستهدفة.</li>
+        <li>محتوى إرشادي يشرح طرق احتساب النسبة الموزونة.</li>
+      </ul>
+      <h3>إخلاء مسؤولية</h3>
+      <p>الموقع مستقل وغير تابع لأي جامعة أو جهة حكومية، والنتائج استرشادية فقط. تختلف الأوزان من عام لآخر وبحسب التخصص، لذا ننصح بمراجعة بوابة القبول الرسمية لكل جامعة قبل اتخاذ أي قرار.</p>
+    </div>
+
+    <!-- Privacy -->
+    <div class="pane" id="pane-privacy">
+      <h3 class="!mt-0">سياسة الخصوصية</h3>
+      <p>نحترم خصوصيتك ونلتزم بحماية بياناتك. توضح هذه السياسة ما نجمعه وكيف نستخدمه.</p>
+      <h3>الدرجات التي تُدخلها</h3>
+      <p>تتم جميع العمليات الحسابية داخل متصفحك فقط، ولا يتم إرسال درجاتك أو تخزينها على أي خادم.</p>
+      <h3>الملفات التعريفية (الكوكيز) والإعلانات</h3>
+      <p>قد نعرض إعلانات عبر خدمة Google AdSense. تستخدم Google وشركاؤها ملفات تعريف الارتباط لعرض إعلانات بناءً على زياراتك السابقة لهذا الموقع أو لمواقع أخرى. يمكنك إدارة تفضيلات الإعلانات المخصصة أو إلغاءها من خلال إعدادات الإعلانات في حسابك على Google.</p>
+      <h3>التحليلات</h3>
+      <p>قد نستخدم أدوات تحليل لقياس عدد الزيارات وتحسين تجربة الاستخدام، وتكون البيانات مجمّعة ولا تحدد هويتك الشخصية.</p>
+      <h3>التواصل معنا</h3>
+      <p>إذا راسلتنا عبر نموذج «اتصل بنا» فسنستخدم بريدك فقط للرد على استفسارك. ولن نشاركه مع أي طرف ثالث.</p>
+      <h3>الروابط الخارجية</h3>
+      <p>قد يحتوي الموقع على روابط لمواقع أخرى، ولسنا مسؤولين عن سياسات الخصوصية أو محتوى تلك المواقع.</p>
+      <h3>التعديلات</h3>
+      <p>قد نحدّث هذه السياسة من وقت لآخر، ويُعد استمرارك في استخدام الموقع موافقة على النسخة المحدثة.</p>
+    </div>
+
+    <!-- Terms -->
+    <div class="pane" id="pane-terms">
+      <h3 class="!mt-0">شروط الاستخدام</h3>
+      <p>باستخدامك هذا الموقع فإنك توافق على الشروط التالية:</p>
+      <ul>
+        <li>الحاسبة أداة استرشادية، ولا نضمن مطابقة نتائجها للنسبة المعتمدة رسميًا.</li>
+        <li>الأوزان المعروضة قد تتغير دون إشعار، ومسؤولية التحقق منها من الجهة الرسمية تقع على المستخدم.</li>
+        <li>لا يتحمل الموقع أي مسؤولية عن قرارات تُتخذ بناءً على نتائج الحاسبة.</li>
+        <li>يُمنع نسخ محتوى الموقع أو إعادة نشره تجاريًا دون إذن مسبق.</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="pane" id="pane-contact">
+      <h3 class="!mt-0">اتصل بنا</h3>
+      <p>يسعدنا تلقي اقتراحاتك وملاحظاتك أو تصحيحاتك على الأوزان. املأ النموذج وسيُفتح تطبيق البريد لديك برسالة جاهزة للإرسال.</p>
+      <div class="mt-4 space-y-3" id="contactForm">
+        <div class="grid sm:grid-cols-2 gap-3">
+          <div><label class="block text-sm font-bold mb-1" for="cName">الاسم</label><input id="cName" type="text" class="field left" placeholder="اسمك الكريم"></div>
+          <div><label class="block text-sm font-bold mb-1" for="cEmail">البريد الإلكتروني</label><input id="cEmail" type="email" class="field left" placeholder="name@example.com" dir="ltr" style="text-align:right"></div>
+        </div>
+        <div>
+          <label class="block text-sm font-bold mb-1" for="cSubject">الموضوع</label>
+          <select id="cSubject" class="field left">
+            <option>اقتراح لتحسين الموقع</option>
+            <option>تصحيح أوزان جامعة</option>
+            <option>الإبلاغ عن مشكلة</option>
+            <option>استفسار عام</option>
+          </select>
+        </div>
+        <div><label class="block text-sm font-bold mb-1" for="cMsg">الرسالة</label><textarea id="cMsg" class="field left" placeholder="اكتب رسالتك هنا..."></textarea></div>
+        <p id="cStatus" class="hidden rounded-xl px-4 py-3 text-sm font-semibold"></p>
+        <button id="cSend" type="button" class="btn w-full py-3"><i class="fa-solid fa-paper-plane ml-2"></i>إرسال الرسالة</button>
+        <p class="text-xs text-slate-500 text-center">أو راسلنا مباشرة على: <span id="mailShow" dir="ltr" class="font-bold text-violet-700"></span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  var CONTACT_EMAIL = 'contact@your-domain.com'; // غيّر هذا البريد إلى بريدك الفعلي قبل النشر
+  var $ = function(id){return document.getElementById(id)};
+
+  /* ---------- الأوزان ---------- */
+  var PRESETS = [
+    {id:'kfupm', name:'جامعة الملك فهد للبترول والمعادن', g:0,  q:50, t:50, icon:'fa-flask'},
+    {id:'ksu',   name:'جامعة الملك سعود',                 g:30, q:30, t:40, icon:'fa-building-columns'},
+    {id:'kau',   name:'جامعة الملك عبدالعزيز',            g:30, q:30, t:40, icon:'fa-landmark'},
+    {id:'pnu',   name:'جامعة الأميرة نورة',               g:30, q:30, t:40, icon:'fa-book-open'},
+    {id:'cus',   name:'أوزان مخصصة',                      g:null,q:null,t:null, icon:'fa-sliders'}
+  ];
+  var current = 'ksu';
+  var presetsEl = $('presets');
+
+  PRESETS.forEach(function(p){
+    var b = document.createElement('button');
+    b.type='button';
+    b.className='preset'+(p.id===current?' active':'');
+    b.dataset.id=p.id;
+    b.innerHTML='<i class="fa-solid '+p.icon+' block text-lg mb-1"></i>'+p.name+(p.g!==null?'<span class="block text-xs opacity-75 mt-1">'+p.g+' / '+p.q+' / '+p.t+'</span>':'<span class="block text-xs opacity-75 mt-1">حسب رغبتك</span>');
+    b.addEventListener('click',function(){selectPreset(p.id)});
+    presetsEl.appendChild(b);
+  });
+
+  function markActive(id){
+    document.querySelectorAll('.preset').forEach(function(el){el.classList.toggle('active',el.dataset.id===id)});
+  }
+  function openCustom(open){
+    $('customBox').classList.toggle('hidden',!open);
+    $('chev').style.transform=open?'rotate(180deg)':'none';
+  }
+  function selectPreset(id){
+    current=id; markActive(id);
+    var p=PRESETS.filter(function(x){return x.id===id})[0];
+    if(p.g!==null){$('wg').value=p.g;$('wq').value=p.q;$('wt').value=p.t;}
+    else openCustom(true);
+    refresh(false);
+  }
+  $('toggleCustom').addEventListener('click',function(){openCustom($('customBox').classList.contains('hidden'))});
+
+  function W(){return {g:parseFloat($('wg').value)||0,q:parseFloat($('wq').value)||0,t:parseFloat($('wt').value)||0}}
+  function sumOk(w){return Math.abs(w.g+w.q+w.t-100)<0.001}
+
+  function updateWeightUI(){
+    var w=W(), s=Math.round((w.g+w.q+w.t)*100)/100, el=$('sumInfo');
+    if(sumOk(w)){el.className='text-sm font-bold mt-3 text-emerald-600';el.innerHTML='<i class="fa-solid fa-circle-check ml-1"></i>مجموع الأوزان: 100% — الحالة سليمة';}
+    else{el.className='text-sm font-bold mt-3 text-red-600';el.innerHTML='<i class="fa-solid fa-triangle-exclamation ml-1"></i>مجموع الأوزان: '+s+'% — يجب أن يساوي 100%';}
+    var tags={gpa:['gTag',w.g],qudrat:['qTag',w.q],tahsili:['tTag',w.t]};
+    Object.keys(tags).forEach(function(k){
+      var t=$(tags[k][0]),wt=tags[k][1];
+      t.textContent='(الوزن '+fmt(wt)+'%)';
+      $(k).disabled=(wt===0);
+      if(wt===0){$(k).placeholder='لا تدخل في النسبة';}
+    });
+    $('gpa').placeholder=W().g===0?'لا تدخل في النسبة':'مثال: 95';
+    $('qudrat').placeholder=W().q===0?'لا تدخل في النسبة':'مثال: 85';
+    $('tahsili').placeholder=W().t===0?'لا تدخل في النسبة':'مثال: 90';
+  }
+  ['wg','wq','wt'].forEach(function(id){
+    $(id).addEventListener('input',function(){current='cus';markActive('cus');refresh(false)});
+  });
+
+  /* ---------- أدوات ---------- */
+  function fmt(n){return String(Math.round(n*100)/100)}
+  function showError(m){var e=$('error');if(m){e.textContent=m;e.classList.remove('hidden')}else e.classList.add('hidden')}
+  function inRange(v){return !isNaN(v)&&v>=0&&v<=100}
+
+  var LEVELS=[
+    {min:95,t:'ممتاز جدًا',n:'نسبة تنافس على أعلى التخصصات في معظم الجامعات.'},
+    {min:90,t:'ممتاز — منافسة قوية',n:'فرصك قوية في كثير من التخصصات التنافسية.'},
+    {min:85,t:'جيد جدًا',n:'فرص جيدة، وقد تحتاج لتحسين طفيف في التخصصات الأعلى طلبًا.'},
+    {min:75,t:'جيد',n:'مناسبة لتخصصات متوسطة التنافس، ويمكن رفعها بإعادة الاختبارات.'},
+    {min:0, t:'تحتاج إلى تحسين',n:'ننصح بإعادة القدرات والتحصيلي لرفع نسبتك.'}
+  ];
+  function level(s){for(var i=0;i<LEVELS.length;i++){if(s>=LEVELS[i].min)return LEVELS[i]}}
+
+  /* قراءة المدخلات: strict = إظهار الأخطاء */
+  function read(strict){
+    var w=W(), v={g:parseFloat($('gpa').value),q:parseFloat($('qudrat').value),t:parseFloat($('tahsili').value)};
+    if(!sumOk(w)){ if(strict){showError('مجموع الأوزان يجب أن يساوي 100%. يرجى تعديلها.');openCustom(true);} return null; }
+    var keys=['g','q','t'], names={g:'الثانوية العامة',q:'القدرات',t:'التحصيلي'};
+    for(var i=0;i<3;i++){
+      var k=keys[i];
+      if(w[k]===0){v[k]=0;continue;}
+      if(isNaN(v[k])){ if(strict)showError('يرجى إدخال درجة '+names[k]+'.'); return null; }
+      if(!inRange(v[k])){ if(strict)showError('درجة '+names[k]+' يجب أن تكون بين 0 و100.'); return null; }
+    }
+    showError('');
+    return {v:v,w:w};
+  }
+
+  /* ---------- النتيجة ---------- */
+  var shown=0;
+  function animate(to){
+    var el=$('finalScore'),from=shown,start=performance.now(),dur=450;
+    function step(now){
+      var p=Math.min((now-start)/dur,1),e=1-Math.pow(1-p,3);
+      el.textContent=fmt(from+(to-from)*e);
+      if(p<1)requestAnimationFrame(step);else{el.textContent=fmt(to);shown=to}
+    }
+    requestAnimationFrame(step);
+  }
+
+  function renderResult(d){
+    var v=d.v,w=d.w;
+    var parts=[
+      {n:'الثانوية العامة',s:v.g,w:w.g,c:'#2563eb'},
+      {n:'القدرات العامة',s:v.q,w:w.q,c:'#7c3aed'},
+      {n:'التحصيلي',s:v.t,w:w.t,c:'#a855f7'}
+    ], total=0;
+    parts.forEach(function(p){p.pts=p.s*p.w/100;total+=p.pts});
+    $('resultEmpty').classList.add('hidden');
+    $('resultBox').classList.remove('hidden');
+    var lv=level(total);
+    $('grade').textContent=lv.t; $('gradeNote').textContent=lv.n;
+    $('ring').style.strokeDashoffset=(326.7*(1-Math.min(total,100)/100)).toFixed(1);
+    animate(total);
+    $('breakdown').innerHTML=parts.filter(function(p){return p.w>0}).map(function(p){
+      var pct=p.pts/p.w*100;
+      return '<div><div class="flex justify-between text-sm font-bold mb-1"><span>'+p.n+' <span class="text-slate-400 font-semibold">(وزن '+fmt(p.w)+'%)</span></span><span>'+fmt(p.pts)+' من '+fmt(p.w)+'</span></div>'+
+      '<div class="h-2.5 rounded-full bg-slate-100 overflow-hidden"><div class="bar h-full rounded-full" style="width:'+pct.toFixed(1)+'%;background:'+p.c+'"></div></div></div>';
+    }).join('');
+    return total;
+  }
+  function clearResult(){
+    $('resultBox').classList.add('hidden'); $('resultEmpty').classList.remove('hidden');
+    $('ring').style.strokeDashoffset='326.7'; shown=0;
+  }
+
+  /* ---------- الهدف ---------- */
+  function renderTarget(d,strict){
+    var out=$('targetResult'), tgRaw=$('target').value;
+    if(tgRaw===''){ out.classList.add('hidden'); if(strict){out.classList.remove('hidden');setBox(out,'red','أدخل النسبة المستهدفة أولًا.');} return; }
+    var tg=parseFloat(tgRaw);
+    out.classList.remove('hidden');
+    if(!d){ setBox(out,'amber','أكمل إدخال درجاتك وأوزانك أولًا لنحسب الدرجة المطلوبة.'); return; }
+    if(isNaN(tg)||tg<0||tg>100){ setBox(out,'red','يرجى إدخال نسبة مستهدفة بين 0 و100.'); return; }
+    var v=d.v,w=d.w,key=$('goalOn').value;
+    var cur=v.g*w.g/100+v.q*w.q/100+v.t*w.t/100;
+    if(cur>=tg){ setBox(out,'green','<i class="fa-solid fa-circle-check ml-1"></i>أحسنت! نسبتك الحالية ('+fmt(cur)+'%) تحقق هدفك ('+fmt(tg)+'%) بالفعل.'); return; }
+    if(key==='all'){
+      var delta=tg-cur, maxD=Math.min(100-v.g,100-v.q,100-v.t);
+      var fullG=(w.g>0?100-v.g:Infinity),fullQ=(w.q>0?100-v.q:Infinity),fullT=(w.t>0?100-v.t:Infinity);
+      maxD=Math.min(fullG,fullQ,fullT);
+      if(delta>maxD){ setBox(out,'red','<i class="fa-solid fa-triangle-exclamation ml-1"></i>حتى مع رفع الدرجات المؤثرة بالتساوي لا يمكن الوصول إلى '+fmt(tg)+'%، لأن إحداها ستتجاوز 100.'); return; }
+      var parts=[];
+      if(w.g>0)parts.push('الثانوية '+fmt(v.g+delta));
+      if(w.q>0)parts.push('القدرات '+fmt(v.q+delta));
+      if(w.t>0)parts.push('التحصيلي '+fmt(v.t+delta));
+      setBox(out,'violet','<i class="fa-solid fa-bullseye ml-1"></i>تحتاج إلى رفع كل درجة مؤثرة بمقدار <span class="text-xl font-black">'+fmt(delta)+'</span> نقطة، لتصبح: '+parts.join(' — ')+'.'); return;
+    }
+    var map={gpa:'g',qudrat:'q',tahsili:'t'}, names={gpa:'الثانوية العامة',qudrat:'القدرات',tahsili:'التحصيلي'};
+    var k=map[key];
+    if(w[k]===0){ setBox(out,'amber','وزن '+names[key]+' في هذه الجامعة يساوي 0%، لذلك لا يؤثر تحسينه على النسبة. اختر درجة أخرى.'); return; }
+    var others=0; ['g','q','t'].forEach(function(x){if(x!==k)others+=v[x]*w[x]/100});
+    var needed=(tg-others)/w[k]*100;
+    if(needed>100){
+      setBox(out,'red','<i class="fa-solid fa-triangle-exclamation ml-1"></i>لا يمكن الوصول إلى '+fmt(tg)+'% بتحسين '+names[key]+' وحده، فالحد الأقصى هو '+fmt(others+w[k])+'%. جرّب تحسين أكثر من اختبار.'); return;
+    }
+    setBox(out,'violet','<i class="fa-solid fa-bullseye ml-1"></i>تحتاج إلى <span class="text-xl font-black">'+fmt(needed)+'</span> في '+names[key]+' للوصول إلى '+fmt(tg)+'%، أي بزيادة قدرها <span class="font-black">'+fmt(needed-v[k])+'</span> نقطة عن درجتك الحالية.');
+  }
+  function setBox(el,color,html){
+    var m={red:'bg-red-50 text-red-700 border-red-200',green:'bg-emerald-50 text-emerald-700 border-emerald-200',amber:'bg-amber-50 text-amber-800 border-amber-200',violet:'bg-violet-50 text-violet-800 border-violet-200'};
+    el.className='mt-4 rounded-2xl p-4 text-sm font-bold leading-loose border fade '+m[color];
+    el.innerHTML=html;
+  }
+
+  /* ---------- تحديث لحظي ---------- */
+  function refresh(strict){
+    updateWeightUI();
+    var d=read(strict);
+    if(d){renderResult(d)} else clearResult();
+    renderTarget(d,false);
+    return d;
+  }
+  ['gpa','qudrat','tahsili','target'].forEach(function(id){
+    $(id).addEventListener('input',function(){refresh(false)});
+    $(id).addEventListener('keydown',function(e){if(e.key==='Enter')$('calcBtn').click()});
+  });
+  $('goalOn').addEventListener('change',function(){refresh(false)});
+
+  $('calcBtn').addEventListener('click',function(){
+    var d=refresh(true);
+    if(d && window.innerWidth<1024){$('resultCard').scrollIntoView({behavior:'smooth',block:'center'})}
+  });
+  $('targetBtn').addEventListener('click',function(){
+    var d=read(true);
+    if(!d)return;
+    if($('target').value===''){var o=$('targetResult');o.classList.remove('hidden');setBox(o,'red','أدخل النسبة المستهدفة أولًا.');return;}
+    renderTarget(d,true);
+  });
+  $('resetBtn').addEventListener('click',function(){
+    ['gpa','qudrat','tahsili','target'].forEach(function(id){$(id).value=''});
+    $('targetResult').classList.add('hidden'); showError('');
+    openCustom(false); selectPreset('ksu');
+  });
+
+  /* ---------- لوحة المعلومات (من نحن / الخصوصية / الشروط / اتصل بنا) ---------- */
+  var overlay=$('overlay'), titles={about:'من نحن',privacy:'سياسة الخصوصية',terms:'شروط الاستخدام',contact:'اتصل بنا'};
+  function openPanel(name){
+    if(!titles[name])name='about';
+    document.querySelectorAll('.pane').forEach(function(p){p.classList.toggle('on',p.id==='pane-'+name)});
+    document.querySelectorAll('.tab').forEach(function(t){t.classList.toggle('on',t.dataset.tab===name)});
+    $('panelTitle').textContent=titles[name];
+    overlay.classList.add('open'); document.body.style.overflow='hidden';
+    overlay.querySelector('.sheet').scrollTop=0;
+    if(location.hash!=='#'+name){history.replaceState(null,'','#'+name)}
+  }
+  function closePanel(){
+    overlay.classList.remove('open'); document.body.style.overflow='';
+    history.replaceState(null,'',location.pathname+location.search);
+  }
+  document.querySelectorAll('[data-open]').forEach(function(b){b.addEventListener('click',function(){openPanel(b.dataset.open)})});
+  document.querySelectorAll('.tab').forEach(function(t){t.addEventListener('click',function(){openPanel(t.dataset.tab)})});
+  $('closeBtn').addEventListener('click',closePanel);
+  overlay.addEventListener('click',function(e){if(e.target===overlay)closePanel()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&overlay.classList.contains('open'))closePanel()});
+  function fromHash(){var h=location.hash.replace('#','');if(titles[h])openPanel(h)}
+  window.addEventListener('hashchange',fromHash);
+
+  /* ---------- نموذج الاتصال ---------- */
+  $('mailShow').textContent=CONTACT_EMAIL;
+  $('cSend').addEventListener('click',function(){
+    var n=$('cName').value.trim(),e=$('cEmail').value.trim(),s=$('cSubject').value,m=$('cMsg').value.trim(),st=$('cStatus');
+    function msg(ok,t){st.className='rounded-xl px-4 py-3 text-sm font-semibold '+(ok?'bg-emerald-50 text-emerald-700 border border-emerald-200':'bg-red-50 text-red-700 border border-red-200');st.textContent=t}
+    if(!n||!e||!m){msg(false,'يرجى تعبئة الاسم والبريد والرسالة.');return}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)){msg(false,'يرجى إدخال بريد إلكتروني صحيح.');return}
+    var body='الاسم: '+n+'\nالبريد: '+e+'\n\n'+m;
+    window.location.href='mailto:'+CONTACT_EMAIL+'?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(body);
+    msg(true,'تم تجهيز رسالتك، يرجى الضغط على «إرسال» في تطبيق البريد لإتمام الإرسال. شكرًا لتواصلك معنا.');
+  });
+
+  $('year').textContent=new Date().getFullYear();
+  selectPreset('ksu');
+  fromHash();
+})();
+</script>
+</body>
+</html>
